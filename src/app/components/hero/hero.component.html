@@ -1,0 +1,17 @@
+<p>hero works!</p>
+<table>
+<thead>
+  <tr>
+    <th>Id</th>
+    <th>Name</th>
+    <th>Delete</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let hero of herolist">
+    <td>{{hero.id}}</td>
+    <td>{{hero.name}}</td>
+    <td><button (click)="delete(hero.id)">X</button></td>
+  </tr>
+</tbody>
+</table>
